@@ -10,15 +10,6 @@ Files:
 - styles.css — simple styling
 - script.js — calculators and explanation steps
 
-How to host on GitHub Pages:
-1. Create a new repository on GitHub (example name: `Math-Calculator`).
-2. Add these files to the repository root.
-3. Commit and push to the `main` branch.
-4. Go to the repository Settings → Pages, choose Branch = `main` and folder = `/ (root)`, then Save.
-5. After a minute, your site will be available at:
-   `https://<your-username>.github.io/<repo-name>/`
-   e.g. `https://Mrfool-wq.github.io/Math-Calculator/`
-
 Quick git commands:
 ```bash
 # locally
