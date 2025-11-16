@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Math — Beginner to Intermediate</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Simple Math — Beginner to Intermediate</h1>
+    <p>Short explanations and step-by-step calculators to help you learn math.</p>
+  </header>
+
+  <main>
+    <section id="arithmetic" class="card">
+      <h2>1. Basic Arithmetic</h2>
+      <p>Enter two numbers and choose an operation. The result and short steps appear below.</p>
+      <div class="row">
+        <input id="a_num" type="number" placeholder="First number" />
+        <select id="op">
+          <option value="+">+</option>
+          <option value="-">−</option>
+          <option value="*">×</option>
+          <option value="/">÷</option>
+        </select>
+        <input id="b_num" type="number" placeholder="Second number" />
+        <button onclick="doArithmetic()">Calculate</button>
+      </div>
+      <pre id="arithmetic_result" class="result"></pre>
+    </section>
+
+    <section id="fractions" class="card">
+      <h2>2. Fractions — convert and simplify</h2>
+      <p>Enter numerator and denominator to convert to decimal and simplify the fraction.</p>
+      <div class="row">
+        <input id="num" type="number" placeholder="Numerator" />
+        <span>/</span>
+        <input id="den" type="number" placeholder="Denominator" />
+        <button onclick="doFraction()">Convert</button>
+      </div>
+      <pre id="fraction_result" class="result"></pre>
+    </section>
+
+    <section id="percent" class="card">
+      <h2>3. Percentages</h2>
+      <p>Calculate a percentage of a number, or find what percent one number is of another.</p>
+      <div class="row">
+        <input id="base" type="number" placeholder="Base number (e.g. total)" />
+        <input id="pct" type="number" placeholder="Percent (e.g. 20)" />
+        <button onclick="percentOf()">Base × Percent</button>
+      </div>
+      <div class="row">
+        <input id="part" type="number" placeholder="Part (e.g. 30)" />
+        <input id="whole" type="number" placeholder="Whole (e.g. 120)" />
+        <button onclick="whatPercent()">What percent?</button>
+      </div>
+      <pre id="percent_result" class="result"></pre>
+    </section>
+
+    <section id="linear" class="card">
+      <h2>4. Linear equation solver (ax + b = c)</h2>
+      <p>Enter a, b, c and it will solve for x with steps.</p>
+      <div class="row">
+        <input id="coef_a" type="number" placeholder="a (coefficient)" />
+        <input id="coef_b" type="number" placeholder="b" />
+        <input id="coef_c" type="number" placeholder="c" />
+        <button onclick="solveLinear()">Solve</button>
+      </div>
+      <pre id="linear_result" class="result"></pre>
+    </section>
+
+    <section id="notes" class="card">
+      <h2>Notes & tips</h2>
+      <ul>
+        <li>Read the short steps shown below each calculation to understand how answers are found.</li>
+        <li>If you want more topics (e.g., quadratic formula, percentages in growth/decay, exponents), tell me and I will add them.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>Made simple — edit the files to customize. Host on GitHub Pages.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
