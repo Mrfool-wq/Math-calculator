@@ -33,6 +33,3 @@ git remote add origin https://github.com/Mrfool-wq/Math-Calculator.git
 git push -u origin main
 ```
 
-Want me to create and push the repo?
-- I can if you re-authorize the integration. After you accept the authorization prompt, reply here and I'll create the public repository Math-Calculator and push the files.
-```
